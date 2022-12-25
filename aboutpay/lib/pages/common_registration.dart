@@ -51,7 +51,12 @@ class CommonRegistration extends ConsumerWidget {
               children: List.generate(
                 10,
                 (int index) {
-                  return InputChip(label: Text('label'));
+                  return InputChip(
+                    label: Text('label'),
+                    onPressed: () {
+                      
+                    },
+                  );
                 }
               ),
             ),
