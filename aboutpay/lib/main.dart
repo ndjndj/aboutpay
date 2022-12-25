@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:aboutpay/pages/routes.dart';
+
 void main() {
   runApp(
     const ProviderScope(
@@ -60,16 +62,7 @@ class _Main extends State<Main> {
         appBar: AppBar(
           title: const Text('AboutExIn'),
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text(
-                '日本語今日も絶対直らない pushed the button this many times:',
-              ),
-            ],
-          ),
-        ),
+        body: CommonRegistration()
       )
     );
   }
