@@ -28,14 +28,40 @@ class CommonRegistration extends ConsumerWidget {
           ),
 
           Container(
+            margin: const EdgeInsets.only(bottom: 4.0),
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: TextField(
+            child: const TextField(
               decoration: InputDecoration(
                 filled: true,
-                fillColor: Color(0xFFFAFAFA)
+                fillColor: Color(0xFFFAFAFA),
+                border: OutlineInputBorder(
+                  borderSide: BorderSide(color: Color(0xFF333333))
+                ),
               ),
             ),
           ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: const TextField(
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: Color(0xFFFAFAFA),
+                border: OutlineInputBorder(
+                  borderSide: BorderSide(color: Color(0xFF333333))
+                ),
+              ),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Color(0xFFACEB80),
+              foregroundColor: Color(0xFF333333),
+              elevation: 4,
+              shape: const StadiumBorder()
+            ),
+            child: const Text('register'),
+          )
 
         ],
       ),
