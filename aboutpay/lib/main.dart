@@ -38,20 +38,24 @@ class _Main extends State<Main> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('AboutExIn'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-          ],
+    return Container(
+      child: Scaffold(
+        resizeToAvoidBottomInset: false,
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          title: const Text('AboutExIn'),
         ),
-      ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const Text(
+                '日本語今日も絶対直らない pushed the button this many times:',
+              ),
+            ],
+          ),
+        ),
+      )
     );
   }
 }
