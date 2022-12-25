@@ -18,7 +18,7 @@ class AboutExIn extends StatelessWidget {
     return MaterialApp(
       title: 'AboutExIn',
       theme: ThemeData(
-        textTheme: GoogleFonts.kiwiMaruTextTheme(
+        textTheme: GoogleFonts.zenMaruGothicTextTheme(
           Theme.of(context).textTheme
         ),
       ),
