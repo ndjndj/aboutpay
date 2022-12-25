@@ -46,21 +46,30 @@ class CommonRegistration extends ConsumerWidget {
             ),
             child: const Text('register'),
           ),
-          Container(
-            child: Wrap(
-              children: List.generate(
-                20,
-                (int index) {
-                  return InputChip(
-                    label: Text('labellabellabellabellbellabellabellabellabellabel'),
-                    onPressed: () {
+          Expanded(
 
-                    },
-                  );
-                }
-              ),
-            ),
+            child: SingleChildScrollView(
+            child: Wrap(
+                  children: List.generate(
+                    100,
+                    (int index) {
+                      return InputChip(
+                        label: Text('${index}labelel'),
+                        onPressed: () {
+
+                        },
+                      );
+                    }
+                  ),
+                ),
+
+          ),
           )
+
+
+
+
+
         ],
       ),
     );
