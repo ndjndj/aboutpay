@@ -45,8 +45,17 @@ class CommonRegistration extends ConsumerWidget {
               shape: const StadiumBorder()
             ),
             child: const Text('register'),
+          ),
+          Container(
+            child: Wrap(
+              children: List.generate(
+                10,
+                (int index) {
+                  return InputChip(label: Text('label'));
+                }
+              ),
+            ),
           )
-
         ],
       ),
     );
