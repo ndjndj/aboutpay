@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(
@@ -17,7 +18,9 @@ class AboutExIn extends StatelessWidget {
     return MaterialApp(
       title: 'AboutExIn',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        textTheme: GoogleFonts.kiwiMaruTextTheme(
+          Theme.of(context).textTheme
+        ),
       ),
       home: const Main(),
     );
