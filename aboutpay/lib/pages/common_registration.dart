@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:aboutpay/internal/exin_text_field.dart';
 
 class CommonRegistration extends ConsumerWidget {
 
@@ -27,31 +28,8 @@ class CommonRegistration extends ConsumerWidget {
             ),
           ),
 
-          Container(
-            margin: const EdgeInsets.only(bottom: 4.0),
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: const TextField(
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Color(0xFFFAFAFA),
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xFF333333))
-                ),
-              ),
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: const TextField(
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Color(0xFFFAFAFA),
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xFF333333))
-                ),
-              ),
-            ),
-          ),
+          ExInTextField(hintText: 'hintText'),
+          ExInTextField(hintText: 'hintText'),
           ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
