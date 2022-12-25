@@ -39,6 +39,21 @@ class _Main extends State<Main> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color(0xFF0089A7),
+            Color(0xFF00A5B0),
+            Color(0xFF00C0A9),
+            Color(0xFF63D797),
+            Color(0xFFACEB80),
+            Color(0xFFF9F871),
+          ],
+          stops: [0.17, 0.34, 0.51, 0.68, 0.85, 1.0],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter
+        )
+      ),
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.transparent,
