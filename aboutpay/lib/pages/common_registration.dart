@@ -28,8 +28,14 @@ class CommonRegistration extends ConsumerWidget {
             ),
           ),
 
-          ExInTextField(hintText: 'hintText'),
-          ExInTextField(hintText: 'hintText'),
+          const ExInTextField(
+            hintText: 'hintText',
+            margin: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 4.0),
+          ),
+          const ExInTextField(
+            hintText: 'hintText',
+            margin: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 4.0),
+          ),
           ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
